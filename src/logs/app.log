@@ -1,0 +1,751 @@
+2025-08-08 18:44:02,892 - config - INFO - PROJECT_NAME: AUTHETICATION
+2025-08-08 18:44:02,893 - config - INFO - DEBUG: True
+2025-08-08 18:44:02,893 - config - INFO - BASE_DIR: D:\projects\OpenVerse\authorization_service
+2025-08-08 18:44:02,893 - config - INFO - DATABASE_DB: postgresql
+2025-08-08 18:44:02,893 - config - INFO - DATABASE_DRIVER: postgresql+asyncpg
+2025-08-08 18:44:02,893 - config - INFO - DATABASE_POOL_SIZE: 5
+2025-08-08 18:44:02,894 - config - INFO - DATABASE_MAX_OVERFLOW: 10
+2025-08-08 18:44:02,894 - config - INFO - DATABASE_HOST: localhost
+2025-08-08 18:44:02,894 - config - INFO - DATABASE_PORT: 5432
+2025-08-08 18:44:02,894 - config - INFO - DATABASE_USER: postgres
+2025-08-08 18:44:02,894 - config - INFO - DATABASE_PASSWORD: Qwertyboy31
+2025-08-08 18:44:02,895 - config - INFO - DATABASE_FILE_NAME: None
+2025-08-08 18:44:02,895 - config - INFO - DATABASE_NAME: openverse_authorization
+2025-08-08 18:44:02,895 - config - INFO - REDIS_HOST: redis-streams
+2025-08-08 18:44:02,895 - config - INFO - REDIS_PORT: 6379
+2025-08-08 18:44:02,895 - config - INFO - REDIS_DB: 0
+2025-08-08 18:44:02,895 - config - INFO - JWT_ALGORITHM: HS256
+2025-08-08 18:44:02,895 - config - INFO - OTHER_SERVICES: USERS, TEST
+2025-08-08 18:44:02,896 - config - INFO - BASE_URL: localhost
+2025-08-08 18:44:02,896 - config - INFO - PORT_SERVICE: 8080
+2025-08-08 18:44:02,896 - config - INFO - PORT_SERVICE_AUTH: 8080
+2025-08-08 18:44:02,896 - config - INFO - PORT_SERVICE_USERS: 8000
+2025-08-08 18:44:02,896 - config - INFO - SESSION_TTL: 3600
+2025-08-08 18:44:07,834 - config - DEBUG - Formed database URL: postgresql+asyncpg://postgres:Qwertyboy31@localhost:5432/openverse_authorization
+2025-08-08 18:44:07,834 - config - DEBUG - Formed database URL: postgresql+asyncpg://postgres:Qwertyboy31@localhost:5432/openverse_authorization
+2025-08-08 18:44:07,834 - src.infra.repository.db.base - INFO - Creating database engine with URL: postgresql+asyncpg://postgres:Qwertyboy31@localhost:5432/openverse_authorization
+2025-08-08 18:44:07,835 - config - DEBUG - Formed database URL: postgresql+asyncpg://postgres:Qwertyboy31@localhost:5432/openverse_authorization
+2025-08-08 18:44:08,163 - src.infra.repository.db.base - INFO - Database engine and session factory created successfully
+2025-08-08 18:44:08,189 - openverse_applaunch.main - INFO - Creating ApplicationManager for service: AUTHETICATION
+2025-08-08 18:44:08,194 - openverse_applaunch.main - DEBUG - Dependency injection container configured successfully
+2025-08-08 18:44:08,199 - openverse_applaunch.objects.managers.table.core - INFO - TableManager initialized
+2025-08-08 18:44:08,200 - openverse_applaunch.objects.managers.tracer.TracerManager - INFO - Tracer manager initialized
+2025-08-08 18:44:08,200 - openverse_applaunch.objects.managers.health.HealthManager - INFO - Health manager initialized
+2025-08-08 18:44:08,200 - openverse_applaunch.objects.managers.lifecycle.LifeCycleManager - INFO - Lifecycle manager initialized for service: AUTHETICATION
+2025-08-08 18:44:08,201 - openverse_applaunch.objects.managers.lifecycle.LifeCycleManager - DEBUG - Using default lifespan function
+2025-08-08 18:44:08,201 - openverse_applaunch.objects.managers.metrics.MetricsManager - INFO - Metrics manager initialized
+2025-08-08 18:44:08,201 - openverse_applaunch.main - INFO - Initializing ApplicationManager for service: AUTHETICATION
+2025-08-08 18:44:08,201 - openverse_applaunch.main - DEBUG - Managers initialized for service: AUTHETICATION
+2025-08-08 18:44:08,202 - openverse_applaunch.main - DEBUG - Custom lifespan callback configured
+2025-08-08 18:44:08,202 - openverse_applaunch.main - INFO - ApplicationManager created successfully for: AUTHETICATION
+2025-08-08 18:44:08,221 - openverse_applaunch.main - INFO - Adding service: jaeger
+2025-08-08 18:44:08,221 - openverse_applaunch.objects.managers.tracer.TracerManager - DEBUG - Attempting to add tracer: jaeger
+2025-08-08 18:44:08,221 - openverse_applaunch.objects.managers.tracer.TracerManager - INFO - Successfully added tracer: jaeger
+2025-08-08 18:44:08,221 - openverse_applaunch.main - DEBUG - Service jaeger added to tracer manager
+2025-08-08 18:44:08,222 - openverse_applaunch.objects.managers.health.HealthManager - DEBUG - Attempting to register service: jaeger
+2025-08-08 18:44:08,222 - openverse_applaunch.objects.managers.health.HealthManager - INFO - Successfully registered service: jaeger
+2025-08-08 18:44:08,222 - openverse_applaunch.main - DEBUG - Service jaeger registered with health manager
+2025-08-08 18:44:08,222 - openverse_applaunch.main - INFO - Service jaeger added successfully
+2025-08-08 18:44:08,222 - openverse_applaunch.objects.managers.table.storage - DEBUG - Initialized StorageVars with 0 items
+2025-08-08 18:44:08,222 - openverse_applaunch.main - INFO - Initializing application for service: AUTHETICATION
+2025-08-08 18:44:08,222 - openverse_applaunch.main - DEBUG - Configuration: tracers=True, metrics=False, health_check=True
+2025-08-08 18:44:08,222 - openverse_applaunch.main - INFO - Performing health checks
+2025-08-08 18:44:08,223 - openverse_applaunch.objects.managers.health.HealthManager - DEBUG - Starting health check for all services (count: 1)
+2025-08-08 18:44:08,223 - openverse_applaunch.objects.managers.health.HealthManager - DEBUG - Starting health check for service: jaeger
+2025-08-08 18:44:10,945 - openverse_applaunch.objects.managers.health.HealthManager - INFO - Health check completed for 'jaeger': unhealthy
+2025-08-08 18:44:10,946 - openverse_applaunch.objects.managers.health.HealthManager - INFO - Health check summary: 0/1 services healthy
+2025-08-08 18:44:10,946 - openverse_applaunch.main - INFO - Health checks completed for 1 services
+2025-08-08 18:44:10,946 - openverse_applaunch.main - DEBUG - Configuration stored with items 23
+2025-08-08 18:44:10,946 - openverse_applaunch.main - INFO - Creating FastAPI application
+2025-08-08 18:44:10,946 - openverse_applaunch.objects.managers.lifecycle.LifeCycleManager - DEBUG - Creating FastAPI application for service: AUTHETICATION
+2025-08-08 18:44:10,946 - openverse_applaunch.objects.managers.lifecycle.LifeCycleManager - DEBUG - Using custom lifespan function
+2025-08-08 18:44:10,947 - openverse_applaunch.objects.managers.lifecycle.LifeCycleManager - INFO - FastAPI application created successfully for: AUTHETICATION
+2025-08-08 18:44:10,947 - openverse_applaunch.main - INFO - FastAPI application created successfully
+2025-08-08 18:44:10,969 - openverse_applaunch.objects.managers.table.registry - DEBUG - Creating table creator decorator for: 'main'
+2025-08-08 18:44:10,969 - openverse_applaunch.objects.managers.table.registry - INFO - Registering table creator class 'MainTableCreator' as 'main'
+2025-08-08 18:44:10,969 - openverse_applaunch.objects.managers.table.registry - DEBUG - Instantiating table creator via decorator
+2025-08-08 18:44:10,969 - openverse_applaunch.objects.managers.table.core - INFO - Added table creator: main
+2025-08-08 18:44:10,970 - openverse_applaunch.objects.managers.table.registry - INFO - Successfully registered table creator 'main'
+2025-08-08 18:44:10,981 - openverse_applaunch.objects.managers.table.registry - DEBUG - Creating table creator decorator for: 'service'
+2025-08-08 18:44:10,981 - openverse_applaunch.objects.managers.table.registry - INFO - Registering table creator class 'ServiceTableCreator' as 'service'
+2025-08-08 18:44:10,981 - openverse_applaunch.objects.managers.table.registry - DEBUG - Instantiating table creator via decorator
+2025-08-08 18:44:10,981 - openverse_applaunch.objects.managers.table.core - INFO - Added table creator: service
+2025-08-08 18:44:10,981 - openverse_applaunch.objects.managers.table.registry - INFO - Successfully registered table creator 'service'
+2025-08-08 18:44:10,992 - openverse_applaunch.objects.managers.table.registry - DEBUG - Creating table render decorator for: 'main'
+2025-08-08 18:44:10,993 - openverse_applaunch.objects.managers.table.registry - INFO - Registering table renderer class 'MainTableRender' as 'main'
+2025-08-08 18:44:10,993 - openverse_applaunch.objects.managers.table.registry - DEBUG - Instantiating table renderer via decorator
+2025-08-08 18:44:10,993 - openverse_applaunch.objects.managers.table.core - INFO - Added table render: main
+2025-08-08 18:44:10,993 - openverse_applaunch.objects.managers.table.registry - INFO - Successfully registered table renderer 'main'
+2025-08-08 18:44:10,995 - openverse_applaunch.objects.managers.table.registry - DEBUG - Creating table render decorator for: 'service'
+2025-08-08 18:44:10,996 - openverse_applaunch.objects.managers.table.registry - INFO - Registering table renderer class 'ServiceTableRender' as 'service'
+2025-08-08 18:44:10,996 - openverse_applaunch.objects.managers.table.registry - DEBUG - Instantiating table renderer via decorator
+2025-08-08 18:44:10,996 - openverse_applaunch.objects.managers.table.core - INFO - Added table render: service
+2025-08-08 18:44:10,996 - openverse_applaunch.objects.managers.table.registry - INFO - Successfully registered table renderer 'service'
+2025-08-08 18:44:10,999 - openverse_applaunch.objects.managers.table.registry - DEBUG - Creating table config decorator for: 'main'
+2025-08-08 18:44:11,000 - openverse_applaunch.objects.managers.table.registry - INFO - Registering table config class 'ModernTableConfig' as 'main'
+2025-08-08 18:44:11,000 - openverse_applaunch.objects.managers.table.registry - DEBUG - Instantiating table config via decorator
+2025-08-08 18:44:11,000 - openverse_applaunch.objects.managers.table.core - INFO - Added table config: main
+2025-08-08 18:44:11,000 - openverse_applaunch.objects.managers.table.registry - INFO - Successfully registered table config 'main'
+2025-08-08 18:44:11,000 - openverse_applaunch.objects.managers.table.registry - DEBUG - Creating table config decorator for: 'service'
+2025-08-08 18:44:11,001 - openverse_applaunch.objects.managers.table.registry - INFO - Registering table config class 'ReportTableConfig' as 'service'
+2025-08-08 18:44:11,002 - openverse_applaunch.objects.managers.table.registry - DEBUG - Instantiating table config via decorator
+2025-08-08 18:44:11,002 - openverse_applaunch.objects.managers.table.core - INFO - Added table config: service
+2025-08-08 18:44:11,002 - openverse_applaunch.objects.managers.table.registry - INFO - Successfully registered table config 'service'
+2025-08-08 18:44:11,002 - openverse_applaunch.main - INFO - Displaying resource tables
+2025-08-08 18:44:11,002 - openverse_applaunch.objects.managers.table.core - INFO - Displaying all registered tables
+2025-08-08 18:44:11,003 - openverse_applaunch.objects.managers.table.core - DEBUG - Table Creators: {'main': <openverse_applaunch.objects.managers.table.creators.main.MainTableCreator object at 0x000001BCAE2B3620>, 'service': <openverse_applaunch.objects.managers.table.creators.service.ServiceTableCreator object at 0x000001BCAE2B3770>}
+2025-08-08 18:44:11,003 - openverse_applaunch.objects.managers.table.core - DEBUG - Table Renders: {'main': <openverse_applaunch.objects.managers.table.renders.main.MainTableRender object at 0x000001BCAE2B3A10>, 'service': <openverse_applaunch.objects.managers.table.renders.service.ServiceTableRender object at 0x000001BCAE2B38C0>}
+2025-08-08 18:44:11,003 - openverse_applaunch.objects.managers.table.core - DEBUG - Table Config: {'main': ModernTableConfig(title='Modern Table', title_style='bold blue', show_header=True, header_style='bold cyan', show_border=True, border_style='dim blue', padding=2, expand=True, row_styles=['', 'dim'], caption=None, caption_style='italic dim', box1=Box(...)), 'service': ReportTableConfig(title='Report Table', title_style='bold green on black', show_header=True, header_style='bold white on dark_green', show_border=True, border_style='green', padding=1, expand=False, row_styles=['', 'on grey7'], footer_style='italic', highlight=True, highlight_style='bold on dark_green')}
+2025-08-08 18:44:11,003 - openverse_applaunch.objects.managers.table.core - DEBUG - Processing table: main
+2025-08-08 18:44:11,003 - openverse_applaunch.objects.managers.table.core - DEBUG - Validating table components for: main
+2025-08-08 18:44:11,003 - openverse_applaunch.objects.managers.table.core - DEBUG - All components validated for table: main
+2025-08-08 18:44:11,003 - openverse_applaunch.objects.managers.table.core - DEBUG - Retrieved table creator: main
+2025-08-08 18:44:11,003 - openverse_applaunch.objects.managers.table.core - DEBUG - Creating and populating table: main
+2025-08-08 18:44:11,003 - openverse_applaunch.objects.managers.table.core - DEBUG - Retrieved table config: main
+2025-08-08 18:44:11,003 - openverse_applaunch.objects.managers.table.creators.main - DEBUG - Creating main information table
+2025-08-08 18:44:11,003 - openverse_applaunch.objects.managers.table.creators.main - DEBUG - Adding columns to main table
+2025-08-08 18:44:11,003 - openverse_applaunch.objects.managers.table.creators.main - INFO - Main table created successfully
+2025-08-08 18:44:11,004 - openverse_applaunch.objects.managers.table.core - DEBUG - Retrieved table render: main
+2025-08-08 18:44:11,004 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, config={'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}, table=<rich.table.Table object at 0x000001BCAE2B3B60>)
+2025-08-08 18:44:11,004 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, config={'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}, table=<rich.table.Table object at 0x000001BCAE2B3B60>)
+2025-08-08 18:44:11,004 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, config={'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}, table=<rich.table.Table object at 0x000001BCAE2B3B60>)
+2025-08-08 18:44:11,004 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, config={'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}, table=<rich.table.Table object at 0x000001BCAE2B3B60>)
+2025-08-08 18:44:11,004 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, config={'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}, table=<rich.table.Table object at 0x000001BCAE2B3B60>)
+2025-08-08 18:44:11,004 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, config={'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}, table=<rich.table.Table object at 0x000001BCAE2B3B60>)
+2025-08-08 18:44:11,004 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, config={'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}, table=<rich.table.Table object at 0x000001BCAE2B3B60>)
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'config']
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'config']
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'config']
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'config']
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'config']
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'config']
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'config']
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE2B3B60>, 'config': {'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}}
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE2B3B60>, 'config': {'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}}
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE2B3B60>, 'config': {'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}}
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE2B3B60>, 'config': {'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}}
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE2B3B60>, 'config': {'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}}
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE2B3B60>, 'config': {'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}}
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE2B3B60>, 'config': {'PROJECT_NAME': 'AUTHETICATION', 'DEBUG': True, 'BASE_DIR': WindowsPath('D:/projects/OpenVerse/authorization_service'), 'DATABASE_DB': 'postgresql', 'DATABASE_DRIVER': 'postgresql+asyncpg', 'DATABASE_POOL_SIZE': 5, 'DATABASE_MAX_OVERFLOW': 10, 'DATABASE_HOST': 'localhost', 'DATABASE_PORT': '5432', 'DATABASE_USER': 'postgres', 'DATABASE_PASSWORD': 'Qwertyboy31', 'DATABASE_FILE_NAME': None, 'DATABASE_NAME': 'openverse_authorization', 'REDIS_HOST': 'redis-streams', 'REDIS_PORT': 6379, 'REDIS_DB': 0, 'JWT_ALGORITHM': 'HS256', 'OTHER_SERVICES': 'USERS, TEST', 'BASE_URL': 'localhost', 'PORT_SERVICE': '8080', 'PORT_SERVICE_AUTH': '8080', 'PORT_SERVICE_USERS': '8000', 'SESSION_TTL': 3600}}
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,005 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,006 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Populating main table with 23 config items
+2025-08-08 18:44:11,006 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: PROJECT_NAME=AUTHETICATION
+2025-08-08 18:44:11,006 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: DEBUG=True
+2025-08-08 18:44:11,006 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: BASE_DIR=D:\projects\OpenVerse\authorization_service
+2025-08-08 18:44:11,006 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: DATABASE_DB=postgresql
+2025-08-08 18:44:11,006 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: DATABASE_DRIVER=postgresql+asyncpg
+2025-08-08 18:44:11,006 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: DATABASE_POOL_SIZE=5
+2025-08-08 18:44:11,006 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: DATABASE_MAX_OVERFLOW=10
+2025-08-08 18:44:11,006 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: DATABASE_HOST=localhost
+2025-08-08 18:44:11,006 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: DATABASE_PORT=5432
+2025-08-08 18:44:11,006 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: DATABASE_USER=postgres
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: DATABASE_PASSWORD=Qwertyboy31
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: DATABASE_FILE_NAME=None
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: DATABASE_NAME=openverse_authorization
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: REDIS_HOST=redis-streams
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: REDIS_PORT=6379
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: REDIS_DB=0
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: JWT_ALGORITHM=HS256
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: OTHER_SERVICES=USERS, TEST
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: BASE_URL=localhost
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: PORT_SERVICE=8080
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: PORT_SERVICE_AUTH=8080
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: PORT_SERVICE_USERS=8000
+2025-08-08 18:44:11,007 - openverse_applaunch.objects.managers.table.renders.main - DEBUG - Adding row: SESSION_TTL=3600
+2025-08-08 18:44:11,007 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE2B3B60>
+2025-08-08 18:44:11,007 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE2B3B60>
+2025-08-08 18:44:11,007 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE2B3B60>
+2025-08-08 18:44:11,007 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE2B3B60>
+2025-08-08 18:44:11,007 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE2B3B60>
+2025-08-08 18:44:11,007 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE2B3B60>
+2025-08-08 18:44:11,007 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE2B3B60>
+2025-08-08 18:44:11,008 - openverse_applaunch.objects.managers.table.core - DEBUG - Table populated successfully: main
+2025-08-08 18:44:11,009 - openverse_applaunch.objects.managers.table.core - DEBUG - Table created and populated: main
+2025-08-08 18:44:11,009 - openverse_applaunch.objects.managers.table.core - DEBUG - Processing table: service
+2025-08-08 18:44:11,009 - openverse_applaunch.objects.managers.table.core - DEBUG - Validating table components for: service
+2025-08-08 18:44:11,009 - openverse_applaunch.objects.managers.table.core - DEBUG - All components validated for table: service
+2025-08-08 18:44:11,009 - openverse_applaunch.objects.managers.table.core - DEBUG - Retrieved table creator: service
+2025-08-08 18:44:11,009 - openverse_applaunch.objects.managers.table.core - DEBUG - Creating and populating table: service
+2025-08-08 18:44:11,009 - openverse_applaunch.objects.managers.table.core - DEBUG - Retrieved table config: service
+2025-08-08 18:44:11,009 - openverse_applaunch.objects.managers.table.creators.service - DEBUG - Creating service status table
+2025-08-08 18:44:11,009 - openverse_applaunch.objects.managers.table.creators.service - DEBUG - Adding columns to service table
+2025-08-08 18:44:11,009 - openverse_applaunch.objects.managers.table.creators.service - INFO - Service table created successfully
+2025-08-08 18:44:11,009 - openverse_applaunch.objects.managers.table.core - DEBUG - Retrieved table render: service
+2025-08-08 18:44:11,009 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, table=<rich.table.Table object at 0x000001BCAE470910>)
+2025-08-08 18:44:11,009 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, table=<rich.table.Table object at 0x000001BCAE470910>)
+2025-08-08 18:44:11,009 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, table=<rich.table.Table object at 0x000001BCAE470910>)
+2025-08-08 18:44:11,009 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, table=<rich.table.Table object at 0x000001BCAE470910>)
+2025-08-08 18:44:11,009 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, table=<rich.table.Table object at 0x000001BCAE470910>)
+2025-08-08 18:44:11,009 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, table=<rich.table.Table object at 0x000001BCAE470910>)
+2025-08-08 18:44:11,009 - tools_openverse.common.logger_ - DEBUG - All available arguments: StorageVars(health_dict={'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}, table=<rich.table.Table object at 0x000001BCAE470910>)
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'health_dict']
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'health_dict']
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'health_dict']
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'health_dict']
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'health_dict']
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'health_dict']
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with sig: ['self', 'table', 'health_dict']
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE470910>, 'health_dict': {'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}}
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE470910>, 'health_dict': {'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}}
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE470910>, 'health_dict': {'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}}
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE470910>, 'health_dict': {'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}}
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE470910>, 'health_dict': {'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}}
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE470910>, 'health_dict': {'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}}
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - Calling function 'populate_table' with arguments: {'table': <rich.table.Table object at 0x000001BCAE470910>, 'health_dict': {'jaeger': UnknownResult(service_name='jaeger', last_check_time=datetime.datetime(2025, 8, 8, 18, 44, 10, 945715), message='All connection attempts failed', details={}, status=<ServiceStatus.UNKNOWN: 'unknown'>)}}
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,010 - tools_openverse.common.logger_ - DEBUG - 
+2025-08-08 18:44:11,011 - openverse_applaunch.objects.managers.table.renders.service - DEBUG - Populating service table with 1 services
+2025-08-08 18:44:11,011 - openverse_applaunch.objects.managers.table.renders.service - DEBUG - Processing service: jaeger
+2025-08-08 18:44:11,011 - openverse_applaunch.objects.managers.table.renders.service - DEBUG - Getting style for status: ServiceStatus.UNKNOWN
+2025-08-08 18:44:11,011 - openverse_applaunch.objects.managers.table.renders.service - DEBUG - Formatting details: 0 items
+2025-08-08 18:44:11,011 - openverse_applaunch.objects.managers.table.renders.service - DEBUG - Adding row for jaeger with status ServiceStatus.UNKNOWN
+2025-08-08 18:44:11,011 - openverse_applaunch.objects.managers.table.renders.service - INFO - Service table populated successfully
+2025-08-08 18:44:11,011 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE470910>
+2025-08-08 18:44:11,011 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE470910>
+2025-08-08 18:44:11,011 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE470910>
+2025-08-08 18:44:11,011 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE470910>
+2025-08-08 18:44:11,011 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE470910>
+2025-08-08 18:44:11,011 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE470910>
+2025-08-08 18:44:11,011 - tools_openverse.common.logger_ - INFO - Result of 'populate_table': <rich.table.Table object at 0x000001BCAE470910>
+2025-08-08 18:44:11,012 - openverse_applaunch.objects.managers.table.core - DEBUG - Table populated successfully: service
+2025-08-08 18:44:11,012 - openverse_applaunch.objects.managers.table.core - DEBUG - Table created and populated: service
+2025-08-08 18:44:11,012 - openverse_applaunch.objects.managers.table.core - INFO - Printing tables to console
+2025-08-08 18:44:11,012 - openverse_applaunch.objects.managers.table.core - INFO - Displaying table: Modern Table
+2025-08-08 18:44:11,021 - openverse_applaunch.objects.managers.table.core - INFO - Displaying table: Report Table
+2025-08-08 18:44:11,023 - openverse_applaunch.main - DEBUG - Resource tables displayed
+2025-08-08 18:44:11,023 - openverse_applaunch.main - INFO - Initializing tracers
+2025-08-08 18:44:11,024 - openverse_applaunch.main - DEBUG - Initializing all tracers
+2025-08-08 18:44:11,024 - openverse_applaunch.objects.managers.tracer.TracerManager - DEBUG - Starting initialization of all tracers (count: 1)
+2025-08-08 18:44:11,024 - openverse_applaunch.objects.managers.tracer.TracerManager - ERROR - Tracers initialization failed: JaegerService.init() missing 1 required positional argument: 'service_name'
+2025-08-08 18:44:11,024 - openverse_applaunch.main - ERROR - Failed to initialize tracers: JaegerService.init() missing 1 required positional argument: 'service_name'
+2025-08-08 18:44:11,024 - openverse_applaunch.main - ERROR - Error during tracer initialization: JaegerService.init() missing 1 required positional argument: 'service_name'
+2025-08-08 18:44:11,025 - openverse_applaunch.objects.managers.table.core - DEBUG - Printing to console: Error during tracer initialization: JaegerService....
+2025-08-08 18:44:11,029 - openverse_applaunch.main - DEBUG - Metrics initialization skipped
+2025-08-08 18:44:11,029 - openverse_applaunch.main - INFO - Application initialization completed for service: AUTHETICATION
+2025-08-08 18:44:11,031 - openverse_applaunch.main - DEBUG - Returning initialized FastAPI application
+2025-08-08 18:44:11,100 - tools_openverse.common.logger_ - INFO - Starting application lifespan for AUTHETICATION
+2025-08-08 18:44:11,100 - tools_openverse.common.logger_ - INFO - Starting application lifespan for AUTHETICATION
+2025-08-08 18:44:11,100 - tools_openverse.common.logger_ - INFO - Starting application lifespan for AUTHETICATION
+2025-08-08 18:44:11,100 - tools_openverse.common.logger_ - INFO - Starting application lifespan for AUTHETICATION
+2025-08-08 18:44:11,100 - tools_openverse.common.logger_ - INFO - Starting application lifespan for AUTHETICATION
+2025-08-08 18:44:11,100 - tools_openverse.common.logger_ - INFO - Starting application lifespan for AUTHETICATION
+2025-08-08 18:44:11,100 - tools_openverse.common.logger_ - INFO - Starting application lifespan for AUTHETICATION
+2025-08-08 18:44:11,102 - tools_openverse.common.logger_ - INFO - Initializing database connection
+2025-08-08 18:44:11,102 - tools_openverse.common.logger_ - INFO - Initializing database connection
+2025-08-08 18:44:11,102 - tools_openverse.common.logger_ - INFO - Initializing database connection
+2025-08-08 18:44:11,102 - tools_openverse.common.logger_ - INFO - Initializing database connection
+2025-08-08 18:44:11,102 - tools_openverse.common.logger_ - INFO - Initializing database connection
+2025-08-08 18:44:11,102 - tools_openverse.common.logger_ - INFO - Initializing database connection
+2025-08-08 18:44:11,102 - tools_openverse.common.logger_ - INFO - Initializing database connection
+2025-08-08 18:44:11,103 - tools_openverse.common.logger_ - INFO - Database, redis initialized successfully
+2025-08-08 18:44:11,103 - tools_openverse.common.logger_ - INFO - Database, redis initialized successfully
+2025-08-08 18:44:11,103 - tools_openverse.common.logger_ - INFO - Database, redis initialized successfully
+2025-08-08 18:44:11,103 - tools_openverse.common.logger_ - INFO - Database, redis initialized successfully
+2025-08-08 18:44:11,103 - tools_openverse.common.logger_ - INFO - Database, redis initialized successfully
+2025-08-08 18:44:11,103 - tools_openverse.common.logger_ - INFO - Database, redis initialized successfully
+2025-08-08 18:44:11,103 - tools_openverse.common.logger_ - INFO - Database, redis initialized successfully
+2025-08-08 18:44:11,104 - src.delivery.route.jwt - INFO - Initializing JwtTokenRoute
+2025-08-08 18:44:11,111 - tools_openverse.common.logger_ - INFO - JWT token routes registered successfully
+2025-08-08 18:44:11,111 - tools_openverse.common.logger_ - INFO - JWT token routes registered successfully
+2025-08-08 18:44:11,111 - tools_openverse.common.logger_ - INFO - JWT token routes registered successfully
+2025-08-08 18:44:11,111 - tools_openverse.common.logger_ - INFO - JWT token routes registered successfully
+2025-08-08 18:44:11,111 - tools_openverse.common.logger_ - INFO - JWT token routes registered successfully
+2025-08-08 18:44:11,111 - tools_openverse.common.logger_ - INFO - JWT token routes registered successfully
+2025-08-08 18:44:11,111 - tools_openverse.common.logger_ - INFO - JWT token routes registered successfully
+2025-08-08 18:44:11,112 - tools_openverse.common.logger_ - INFO - Application startup completed successfully
+2025-08-08 18:44:11,112 - tools_openverse.common.logger_ - INFO - Application startup completed successfully
+2025-08-08 18:44:11,112 - tools_openverse.common.logger_ - INFO - Application startup completed successfully
+2025-08-08 18:44:11,112 - tools_openverse.common.logger_ - INFO - Application startup completed successfully
+2025-08-08 18:44:11,112 - tools_openverse.common.logger_ - INFO - Application startup completed successfully
+2025-08-08 18:44:11,112 - tools_openverse.common.logger_ - INFO - Application startup completed successfully
+2025-08-08 18:44:11,112 - tools_openverse.common.logger_ - INFO - Application startup completed successfully
+2025-08-08 18:44:11,113 - src.infra.repository.db.base - INFO - Initializing database tables
+2025-08-08 18:44:12,135 - src.infra.repository.db.base - INFO - Database tables initialized successfully
+2025-08-08 19:00:30,984 - src.infra.repository.db.base - DEBUG - Creating database session
+2025-08-08 19:00:30,984 - src.infra.repository.db.user - DEBUG - Creating JwtRepository instance
+2025-08-08 19:00:30,985 - src.infra.repository.db.user - DEBUG - Initializing JwtRepository
+2025-08-08 19:00:30,985 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:30,985 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:30,985 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:30,985 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:30,985 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:30,985 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:30,985 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:30,986 - src.delivery.route.jwt - INFO - Login attempt for user: New_User
+2025-08-08 19:00:30,986 - src.delivery.route.jwt - DEBUG - Creating access token for user: New_User
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - INFO - Creating access token for user: sub='New_User' expires_delta=datetime.datetime(2025, 8, 8, 19, 15, 30, 986660)
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - INFO - Creating access token for user: sub='New_User' expires_delta=datetime.datetime(2025, 8, 8, 19, 15, 30, 986660)
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - INFO - Creating access token for user: sub='New_User' expires_delta=datetime.datetime(2025, 8, 8, 19, 15, 30, 986660)
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - INFO - Creating access token for user: sub='New_User' expires_delta=datetime.datetime(2025, 8, 8, 19, 15, 30, 986660)
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - INFO - Creating access token for user: sub='New_User' expires_delta=datetime.datetime(2025, 8, 8, 19, 15, 30, 986660)
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - INFO - Creating access token for user: sub='New_User' expires_delta=datetime.datetime(2025, 8, 8, 19, 15, 30, 986660)
+2025-08-08 19:00:30,986 - tools_openverse.common.logger_ - INFO - Creating access token for user: sub='New_User' expires_delta=datetime.datetime(2025, 8, 8, 19, 15, 30, 986660)
+2025-08-08 19:00:30,988 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:30,988 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:30,988 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:30,988 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:30,988 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:30,988 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:30,988 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,989 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,990 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:30,991 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:30,991 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:30,991 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:30,991 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:30,991 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:30,991 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:30,991 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:30,992 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:31,255 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:31,255 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:31,255 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:31,255 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:31,255 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:31,255 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:31,255 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:31,315 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:31,315 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:31,315 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:31,315 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:31,315 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:31,315 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:31,315 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:31,317 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:31,319 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:31,319 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:31,319 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:31,319 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:31,319 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:31,319 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:31,319 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:31,363 - tools_openverse.common.logger_ - INFO - Access token created successfully for user: New_User
+2025-08-08 19:00:31,363 - tools_openverse.common.logger_ - INFO - Access token created successfully for user: New_User
+2025-08-08 19:00:31,363 - tools_openverse.common.logger_ - INFO - Access token created successfully for user: New_User
+2025-08-08 19:00:31,363 - tools_openverse.common.logger_ - INFO - Access token created successfully for user: New_User
+2025-08-08 19:00:31,363 - tools_openverse.common.logger_ - INFO - Access token created successfully for user: New_User
+2025-08-08 19:00:31,363 - tools_openverse.common.logger_ - INFO - Access token created successfully for user: New_User
+2025-08-08 19:00:31,363 - tools_openverse.common.logger_ - INFO - Access token created successfully for user: New_User
+2025-08-08 19:00:31,365 - src.delivery.route.jwt - INFO - Access token created successfully for user: New_User
+2025-08-08 19:00:31,365 - src.delivery.route.jwt - DEBUG - Setting cookie expiration time: 2025-08-08 19:15:31.365339
+2025-08-08 19:00:31,365 - src.delivery.route.jwt - INFO - Cookie set successfully for user: New_User
+2025-08-08 19:00:31,365 - src.infra.repository.db.base - DEBUG - Database session created successfully
+2025-08-08 19:00:31,365 - src.infra.repository.db.base - DEBUG - Database session closed
+2025-08-08 19:00:41,340 - src.infra.repository.db.base - DEBUG - Creating database session
+2025-08-08 19:00:41,340 - src.infra.repository.db.user - DEBUG - Creating JwtRepository instance
+2025-08-08 19:00:41,341 - src.infra.repository.db.user - DEBUG - Initializing JwtRepository
+2025-08-08 19:00:41,341 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:41,341 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:41,341 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:41,341 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:41,341 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:41,341 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:41,341 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:00:41,342 - src.delivery.route.jwt - INFO - ReadMe endpoint called
+2025-08-08 19:00:41,342 - src.delivery.route.jwt - DEBUG - Processing ReadMe request from IP: ::1
+2025-08-08 19:00:41,342 - src.delivery.route.jwt - DEBUG - Attempting to get current user from token
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - Getting current user by token
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - Getting current user by token
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - Getting current user by token
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - Getting current user by token
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - Getting current user by token
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - Getting current user by token
+2025-08-08 19:00:41,342 - tools_openverse.common.logger_ - DEBUG - Getting current user by token
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token from cookies: ***
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token from cookies: ***
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token from cookies: ***
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token from cookies: ***
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token from cookies: ***
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token from cookies: ***
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token from cookies: ***
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:00:41,343 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:41,344 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,345 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:41,346 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:00:41,347 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,347 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,347 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,347 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,347 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,347 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,347 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,611 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,611 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,611 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,611 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,611 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,611 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,611 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:00:41,617 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:41,617 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:41,617 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:41,617 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:41,617 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:41,617 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:41,617 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:41,618 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:00:41,621 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:00:41,622 - src.delivery.route.jwt - INFO - User data retrieved successfully in ReadMe endpoint
+2025-08-08 19:00:41,622 - src.delivery.route.jwt - DEBUG - User data: {'id': '144e16a7-e655-4658-abd6-e1935b489e18', 'login': 'New_User', 'name': 'Javicle', 'email': 'user@example.com', 'is_active': True, 'created_at': '2025-07-16T12:20:47.115797Z', 'updated_at': '2025-07-16T12:20:47.115797Z'}
+2025-08-08 19:00:41,622 - src.infra.repository.db.base - DEBUG - Database session created successfully
+2025-08-08 19:00:41,622 - src.infra.repository.db.base - DEBUG - Database session closed
+2025-08-08 19:02:51,265 - src.infra.repository.db.base - DEBUG - Creating database session
+2025-08-08 19:02:51,266 - src.infra.repository.db.user - DEBUG - Creating JwtRepository instance
+2025-08-08 19:02:51,266 - src.infra.repository.db.user - DEBUG - Initializing JwtRepository
+2025-08-08 19:02:51,266 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:02:51,266 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:02:51,266 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:02:51,266 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:02:51,266 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:02:51,266 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:02:51,266 - tools_openverse.common.logger_ - INFO - SetRequest initialized with timeout: 10.0 seconds
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - JwtService initialized
+2025-08-08 19:02:51,267 - src.delivery.route.jwt - INFO - GET_CURRENT_USER_BY_RAW_TOKEN endpoint called
+2025-08-08 19:02:51,267 - src.delivery.route.jwt - DEBUG - Attempting to get current user from token
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:02:51,267 - tools_openverse.common.logger_ - DEBUG - Decoding token with algorithm: HS256
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - DEBUG - Token decoded successfully for user: New_User
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:02:51,268 - tools_openverse.common.logger_ - INFO - Sending GET request to service=USERS, route=UsersRoutes.GET_USER_BY_LOGIN, form_data=False
+2025-08-08 19:02:51,269 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:02:51,269 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:02:51,269 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:02:51,269 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:02:51,269 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:02:51,269 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:02:51,269 - tools_openverse.common.logger_ - DEBUG - Request data provided: GetUserRequest
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Validating HTTP method HttpMethods.GET for route UsersRoutes.GET_USER_BY_LOGIN
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - HTTP method validation passed
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,270 - tools_openverse.common.logger_ - DEBUG - Constructing URL for service=ServiceName.USERS, route=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Getting route for service=USERS, route_name=UsersRoutes.GET_USER_BY_LOGIN, params={'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Base route template: /users/login/{user_login}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - DEBUG - Formatting route with parameters: {'id': "<class 'object'>", 'user_login': 'New_User'}
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:02:51,271 - tools_openverse.common.logger_ - INFO - Resolved route: /users/login/New_User
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - DEBUG - Found service port: 8000 for service: USERS
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,272 - tools_openverse.common.logger_ - INFO - Constructed final URL: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,550 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,550 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,550 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,550 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,550 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,550 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,550 - tools_openverse.common.logger_ - DEBUG - Making HTTP request to: http://localhost:8000/users/login/New_User
+2025-08-08 19:02:51,560 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:02:51,560 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:02:51,560 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:02:51,560 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:02:51,560 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:02:51,560 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:02:51,560 - tools_openverse.common.logger_ - INFO - Received response with status code: 200
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - DEBUG - Response JSON parsed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:02:51,561 - tools_openverse.common.logger_ - INFO - Request completed successfully
+2025-08-08 19:02:51,564 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:02:51,564 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:02:51,564 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:02:51,564 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:02:51,564 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:02:51,564 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:02:51,564 - tools_openverse.common.logger_ - DEBUG - dynamic model : id='144e16a7-e655-4658-abd6-e1935b489e18' login='New_User' name='Javicle' email='user@example.com' is_active=True created_at='2025-07-16T12:20:47.115797Z' updated_at='2025-07-16T12:20:47.115797Z'
+2025-08-08 19:02:51,565 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:02:51,565 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:02:51,565 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:02:51,565 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:02:51,565 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:02:51,565 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:02:51,565 - tools_openverse.common.logger_ - INFO - Current user retrieved successfully: New_User
+2025-08-08 19:02:51,566 - src.delivery.route.jwt - INFO - User data retrieved successfully in GET_CURRENT_USER_BY_RAW_TOKEN endpoint
+2025-08-08 19:02:51,566 - src.delivery.route.jwt - DEBUG - User data: {'id': '144e16a7-e655-4658-abd6-e1935b489e18', 'login': 'New_User', 'name': 'Javicle', 'email': 'user@example.com', 'is_active': True, 'created_at': '2025-07-16T12:20:47.115797Z', 'updated_at': '2025-07-16T12:20:47.115797Z'}
+2025-08-08 19:02:51,566 - src.infra.repository.db.base - DEBUG - Database session created successfully
+2025-08-08 19:02:51,566 - src.infra.repository.db.base - DEBUG - Database session closed

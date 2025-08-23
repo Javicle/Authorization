@@ -1,0 +1,11 @@
+[MASTER]
+ignore = venv,.venv,tests
+
+
+[MESSAGES CONTROL]
+disable=
+    C0114,  # Модуль должен иметь докстринг
+    C0115,  # Класс должен иметь докстринг
+    C0116,  # Функция должна иметь докстринг
+    too-few-public-methods,
+    import-error,

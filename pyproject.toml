@@ -1,0 +1,37 @@
+[tool.black]
+line-length = 88
+skip-string-normalization = false
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.poetry]
+name = "authorization-service"
+version = "0.1.0"
+description = ""
+authors = ["Javicle <supergamer.08.2006@gmail.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "src/"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tools-openverse = {git = "https://github.com/Javicle/_ToolsOpenVerse.git"}
+fastapi = "^0.115.6"
+aiosqlite = "^0.20.0"
+sqlalchemy = "^2.0.36"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+httpx = "^0.28.1"
+uvicorn = "^0.34.0"
+asyncpg = "^0.30.0"
+python-multipart = "^0.0.20"
+app-starter = {git = "https://github.com/Javicle/_AppStarter.git"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
