@@ -11,6 +11,7 @@ from tools_openverse.common.request import (
     UsersRoutes,
 )
 from tools_openverse.common.types import JSONResponseTypes, Sentinal, SuccessResponse
+from tools_openverse.common.abc.user import AbstractUser
 
 from .exc import ErrorResponseException
 
@@ -85,7 +86,7 @@ class JwtRequest:
 
     async def get_user(
         self, user_id: UUID | str = Sentinal, user_login: str = Sentinal
-    ) -> BaseModel:
+    ) -> AbstractUser:
         response_user = await self.set_request.send_request(
             service_name=ServiceName.USERS,
             route_method=HttpMethods.GET,
@@ -101,7 +102,7 @@ class JwtRequest:
             raise ValueError("Не удалось получить пользователь")
 
         user = await repack_response(response_user)
-        return user
+        return user # type: ignore
 
 
 async def get_jwt_request(

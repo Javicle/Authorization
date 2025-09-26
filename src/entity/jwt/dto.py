@@ -9,6 +9,11 @@ logger = setup_logger()
 
 
 class CreateRefreshTokenDTO(BaseModel):
+    """this model needs to create object in database
+
+    Args:
+        BaseModel (_type_): _description_
+    """
     user_id: UUID | str
     refresh_token: RefreshTokenType
     expires_at: datetime.datetime

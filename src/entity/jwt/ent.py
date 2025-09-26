@@ -27,10 +27,16 @@ _PASSWORD_FORM = Form(..., description="User Password")
 
 class CreateAccessTokenData(BaseModel):
     sub: SubType
-    expires_delta: ExpiresAtType = Field(
+    exp: ExpiresAtType = Field(
         default_factory=lambda: datetime.now() + timedelta(minutes=15)
     )
-    
+
+class CreateRefreshTokenData(BaseModel):
+    sub: SubType
+    exp: ExpiresAtType = Field(
+        default_factory=lambda: datetime.now() + timedelta(minutes=45)
+    )
+
 
 class DecodedToken(BaseModel):
     token: AccessTokenType
@@ -46,7 +52,7 @@ class TokenPayload(BaseModel):
 
 class RefreshToken(BaseModel):
     user_id: IdType
-    refresh_token: RefreshTokenType
+    refresh_token_hash: str
     expires_at: ExpiresAtType
     created_at: datetime
     updated_at: datetime

@@ -2,7 +2,7 @@ import datetime
 from typing import Annotated, Optional
 
 from fastapi import Depends
-from sqlalchemy import delete, insert, or_, select, update
+from sqlalchemy import delete, insert, and_, select, update
 from sqlalchemy.ext.asyncio import AsyncSession
 from tools_openverse import setup_logger
 
@@ -40,24 +40,24 @@ class JwtRepository:
                 refresh_token.user_id,
             )
             return CreateRefreshTokenDTO.model_validate(refresh_token)
-        except Exception as e:
+        except Exception as exc:
             logger.error(
                 "Failed to create refresh token for user_id %s: %s",
                 refresh_token.user_id,
-                str(e),
+                str(exc),
                 exc_info=True,
             )
             await self.session.rollback()
             raise
 
     async def get_exists_refresh_token(
-        self, refresh_token: RefreshToken
-    ) -> Optional[RefreshToken]:
+        self, refresh_token: str
+    ) -> RefreshToken | None:
         logger.debug("Searching for existing refresh token")
         try:
             stmt = select(RefreshTokenDBModel).filter(
-                or_(
-                    RefreshTokenDBModel.refresh_token == refresh_token.refresh_token,
+                and_(
+                    RefreshTokenDBModel.refresh_token == refresh_token,
                     RefreshTokenDBModel.expires_at >= datetime.datetime.now(),
                 )
             )
@@ -119,14 +119,13 @@ class JwtRepository:
             await self.session.rollback()
             raise
 
-    async def delete(self, refresh_token: RefreshToken) -> None:
-        logger.info("Deleting refresh token for user_id: %s", refresh_token.user_id)
+    async def delete(self, refresh_token: str) -> None:
+        refresh_token_model = await self.get_exists_refresh_token(refresh_token=refresh_token)
+        if refresh_token:
+            logger.info("Deleting refresh token for user_id: %s", refresh_token_model.user_id)
         try:
             stmt = delete(RefreshTokenDBModel).where(
-                or_(
-                    RefreshTokenDBModel.refresh_token == refresh_token.refresh_token,
-                    RefreshTokenDBModel.expires_at >= datetime.datetime.now(),
-                )
+                    RefreshTokenDBModel.refresh_token == refresh_token
             )
             result = await self.session.execute(stmt)
             await self.session.commit()

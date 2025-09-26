@@ -27,8 +27,5 @@ class RefreshTokenDBModel(Base):
         DateTime, onupdate=datetime.datetime.now, default=datetime.datetime.now
     )
 
-    def __init__(self, **kwargs):
-        logger.debug("Creating RefreshTokenDBModel instance")
-        super().__init__(**kwargs)
 
 
