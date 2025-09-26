@@ -115,7 +115,7 @@ class JwtService:
                 key=settings.JWT_SECRET_KEY,
                 algorithms=[settings.JWT_ALGORITHM],
             )
-            decoded = DecodedToken(**payload)
+            decoded = TokenPayload(**payload)
 
             if decoded.exp < datetime.now(timezone.utc):
                 logger.warning("Token has expired")
